@@ -6,22 +6,18 @@ import About from "./about.js";
 import Gallery from "./gallery.js";
 import Contact from "./contact.js";
 
+import CapstoneContainer from "./capstone-container.js"
+
 
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
-
-          <header>
-            <h1>Parker James Photography</h1>
-            <Link to="/">Home</Link>
-            <Link to="/">Gallery</Link>
-            <Link to="/">About</Link>
-            <Link to="/">Contact</Link>
-          </header>
+         <h1>Parker James Photography</h1>
+         <CapstoneContainer/>
         
           <div className="navbar-routes">
-            <BrowserRouter>
+            <Router>
               <div>
                   <Switch>
                     <Route exact path="/" component={Home} />
@@ -30,7 +26,7 @@ export default class App extends Component {
                     <Route path="/contact" component={Contact} />
                   </Switch>
               </div>
-            </BrowserRouter>
+            </Router>
           </div>
         
       </div>
