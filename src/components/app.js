@@ -5,7 +5,7 @@ import Home from "./home.js";
 import About from "./about.js";
 import Gallery from "./gallery.js";
 import Contact from "./contact.js";
-
+import NavigationComponent from "./navbar.js"
 import CapstoneContainer from "./capstone-container.js"
 
 
@@ -13,11 +13,13 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
+        <NavigationComponent/>
          <h1>Parker James Photography</h1>
          <CapstoneContainer/>
         
           <div className="navbar-routes">
-            <Router>
+            <BrowserRouter>
+            
               <div>
                   <Switch>
                     <Route exact path="/" component={Home} />
@@ -26,7 +28,7 @@ export default class App extends Component {
                     <Route path="/contact" component={Contact} />
                   </Switch>
               </div>
-            </Router>
+            </BrowserRouter>
           </div>
         
       </div>
