@@ -8,6 +8,7 @@ import Contact from "./contact.js";
 import NavigationComponent from "./navbar.js"
 import CapstoneContainer from "./capstone-container.js"
 
+//fix routes they are not taking me to the right page
 
 export default class App extends Component {
   render() {
