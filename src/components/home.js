@@ -11,9 +11,14 @@ export default class Home extends Component {
     }
 
     componentDidMount() {
-        setInterval(() => {
+        this.dynamicTime = setInterval(() => {
+            console.log('This is the way')
             this.setState({currentTime: String(new Date())});
         }, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.dynamicTime);
     }
 
     render() {
