@@ -10,8 +10,6 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        
-         <h1>Parker James Photography</h1>
         <Navbar />
         <PageContent />
       </div>
