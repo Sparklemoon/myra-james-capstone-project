@@ -25,19 +25,19 @@ const NavigationComponent = props => {
         </div>
 
         <div className="nav-link-wrapper">
-          <NavLink to="/about-me" activeClassName="nav-link-active">
+          <NavLink to="/gallery" activeClassName="nav-link-active">
             Gallery
           </NavLink>
         </div>
 
         <div className="nav-link-wrapper">
-          <NavLink to="/contact" activeClassName="nav-link-active">
+          <NavLink to="/about" activeClassName="nav-link-active">
             About
           </NavLink>
         </div>
 
         <div className="nav-link-wrapper">
-          <NavLink to="/blog" activeClassName="nav-link-active">
+          <NavLink to="/contact" activeClassName="nav-link-active">
             Contact
           </NavLink>
         </div>
