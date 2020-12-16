@@ -14,7 +14,7 @@ function Gallery() {
         data.append('upload_preset', 'photography')
         setLoading(true)
 
-        const response = await fetch('https://api.cloudinary.com/v1_1/sparklemoon/image/upload',
+        const response = await fetch(API_KEY,
         {
             method:"POST",
             body:data,
