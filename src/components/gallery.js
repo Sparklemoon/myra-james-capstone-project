@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-//add preventDefault to stop refresh
 function Gallery() {
 
     const [loading, setLoading] = useState(false)
     const [image, setImage] = useState("")
+    // require('dotenv').config()
+
+    // console.log(process.env);
 
     const uploadImage = async event => {
         const files = event.target.files
@@ -12,7 +14,7 @@ function Gallery() {
         data.append('upload_preset', 'photography')
         setLoading(true)
 
-        const response = await fetch("https://api.cloudinary.com/v1_1/sparklemoon/image/upload",
+        const response = await fetch('https://api.cloudinary.com/v1_1/sparklemoon/image/upload',
         {
             method:"POST",
             body:data,
@@ -29,6 +31,15 @@ function Gallery() {
 
     return (
         <div className="gallery-wrapper">
+
+
+
+                
+
+
+
+
+
             <h1> Upload Photography </h1>
             <input type="file"
             name="file"
@@ -41,7 +52,8 @@ function Gallery() {
 
         </div>
     )
+
+              
 }
 
 export default Gallery;
-

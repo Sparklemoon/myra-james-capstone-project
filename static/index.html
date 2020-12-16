@@ -4,12 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script src="https://product-gallery.cloudinary.com/all.js" type="text/javascript"></script>
+  
+  <div id="my-gallery" style="max-width:80%;margin:auto">
+  </div>
+
+  <script type="text/javascript">  
+    const myGallery= cloudinary.galleryWidget({
+      container: "#my-gallery",
+      cloudName: "sparklemoon",
+      mediaAssets: [
+        {tag: "wildlife"}
+       
+      ]
+    });
+    
+    myGallery.render();
+    </script>
+  
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>MJ Capstone</title>
 </head>
 
 <body>
-  <div class="app-wrapper"></div>
+  <div class="app-wrapper">
+    
+  </div>
 </body>
 
 </html>

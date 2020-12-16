@@ -14,6 +14,8 @@ export default class CapstoneContainer extends Component {
                 {title: "Tree"}
             ]
         };
+
+        this.handlePageTitleUpdate = this.handlePageTitleUpdate.bind(this)
     }
 
     capstoneItems() {
