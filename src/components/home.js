@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Login from './login.js';
+
 export default class Home extends Component {
     constructor() {
         super()
@@ -28,6 +30,7 @@ export default class Home extends Component {
             <div className='home-wrapper'>
                 <h1>{pageTitle}</h1>
                 <div>{currentTime}</div>
+                <Login/>
             </div>
         )};
     }

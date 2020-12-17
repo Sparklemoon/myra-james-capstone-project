@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 function Gallery() {
 
     const [loading, setLoading] = useState(false)
@@ -31,12 +32,6 @@ function Gallery() {
 
     return (
         <div className="gallery-wrapper">
-
-
-
-                
-
-
 
 
 
