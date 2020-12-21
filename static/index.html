@@ -20,19 +20,22 @@
   </div>
 </body>
 <footer>
-  <div id="my-gallery" style="max-width:80%;margin:auto">
+  <div class="my-gallery-wrapper">
+  <div id="my-gallery" style="max-width:50%;margin:auto;">
     <script type="text/javascript">  
       const myGallery= cloudinary.galleryWidget({
       container: "#my-gallery",
       cloudName: "sparklemoon",
-      mediaAssets: [
-          {tag: "wildlife"}
+      carouselStyle: "none",
+      mediaAssets: [{tag: "wildlife"},
       
-      ]
-      });
+    ]
+      
+      }); 
       
       myGallery.render();
       </script>
+      </div>
     </div>
 </footer>
 </html>
