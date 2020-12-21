@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-// import Cookies from "js-cookie"
+
+
 
 export default class Login extends Component {
     constructor() {
@@ -23,7 +24,7 @@ export default class Login extends Component {
     handleSubmit(event) {
         event.preventDefault()
 
-        // Cookies.set("username", this.state.username)
+        
         fetch("http://127.0.0.1:5000/user/authentication", {
             method:"POST",
             headers: { "content-type": "application/json"},
@@ -36,8 +37,7 @@ export default class Login extends Component {
         .then(data => {
             console.log(data);
             if (data === "SUCCESS") {
-                // Cookies.set("username", this.state.username)
-                // this.props.history.push("/")
+                
             }
             else {
                 this.setState({ loginFailed: true })
@@ -74,4 +74,12 @@ export default class Login extends Component {
                 {this.state.loginError ? <p>Error Logging In...PLease try again later :D</p> : null}
             </div>
         )}
+
+      
     }
+
+    
+                  
+    
+
+

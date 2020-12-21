@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+import Login from './login.js';
+// import Photo from './gallery-components.js';
+// import ImportScript from './cloud.js';
+
 function Gallery() {
 
     const [loading, setLoading] = useState(false)
@@ -31,9 +35,10 @@ function Gallery() {
     }
 
     return (
+        
         <div className="gallery-wrapper">
-
-
+            
+            
 
             <h1> Upload Photography </h1>
             <input type="file"
@@ -42,9 +47,11 @@ function Gallery() {
             onChange={uploadImage}/>
         
         {loading?(<h3>LOADING!!!!</h3>):(<img src={image} style={{width:'300px'}}/>
+
             ) 
         }
-
+        {/* <Cloud/> */}
+        <Login/>
         </div>
     )
 
