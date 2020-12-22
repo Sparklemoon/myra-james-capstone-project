@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+    .nav-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .home-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .about-wrapper {
+        /* display: flex;
+        align-items: center; */
+        /* height: 100%; */
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* .about-wrapper > .about-heading-wrapper {
+        display: flex;
+        align-items: center;
+    } */
+
+
+}
