@@ -45,6 +45,7 @@
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.16",
     "cloudinary": "^1.23.0",
+    "cloudinary-react": "^1.6.8",
     "copy-webpack-plugin": "^4.5.2",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
