@@ -11,22 +11,29 @@
 
   <link rel="stylesheet" href="style/media-queries.css">
 
-  <script src="https://product-gallery.cloudinary.com/all.js" type="text/javascript"></script>
-
+  <!-- <script src="https://product-gallery.cloudinary.com/all.js" type="text/javascript"></script> -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>MJ Capstone</title>
 
 </head>
 
 <body>
-  <div class="app-wrapper">
-    
-  </div>
+  <!--Container for React rendering-->
+  <div id="container"></div>
+  <!--Bundled file-->
+  <script src="bundle.js"></script>
+  <!-- upload widget -->
+  <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+   <script src="bundle.js"></script>
 </body>
 <footer>
-  <div class="my-gallery-wrapper">
-  <div id="my-gallery" style="max-width:50%;margin:auto;">
-    <script type="text/javascript">  
+  <!-- <div class="my-gallery-wrapper"> -->
+
+
+  <!-- <div id="my-gallery" style="max-width:50%;margin:auto;"> -->
+    <!-- <script type="text/javascript">  
       const myGallery= cloudinary.galleryWidget({
       container: "#my-gallery",
       cloudName: "sparklemoon",
@@ -40,6 +47,8 @@
       myGallery.render();
       </script>
       </div>
-    </div>
+
+
+    </div> -->
 </footer>
 </html>

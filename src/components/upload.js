@@ -1,10 +1,42 @@
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+
+class Upload extends Component {
+
+uploadWidget() {
+    cloudinary.openUploadWidget({ cloud_name: 'sparklemoon', upload_preset: 'preset', tags:['wildlife']},
+        function(error, result) {
+            console.log(result);
+        });
+}
+render(){
+    return (
+        <div className="main">
+            <h1>Gallery</h1>
+            <div className="upload">
+                <button onClick={this.uploadWidget.bind(this)} className="upload-button">
+                    Add Image
+                </button>
+            </div>
+        </div>
+
+    );
+}
+}
+
+render(<Upload />, document.getElementById('container'));
+
+
+
+
+
 // import React, { useState } from 'react';
 
 // import Login from './login.js';
 // // import GalleryWidget from './gallery-widget.js';
 
 
-// function Gallery() {
+// function Upload() {
 
 //     const [loading, setLoading] = useState(false)
 //     const [image, setImage] = useState("")
@@ -62,4 +94,4 @@
               
 // }
 
-// export default Gallery;
+// export default Upload;

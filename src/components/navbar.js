@@ -28,6 +28,12 @@ function Navbar() {
           <NavLink to="/contact" activeClassName="nav-link-active">
             Contact
           </NavLink>
+
+          <div className="nav-link-wrapper">
+          <NavLink to="/upload" activeClassName="nav-link-active">
+            Upload
+          </NavLink>
+        </div>
         </div>
 
       
