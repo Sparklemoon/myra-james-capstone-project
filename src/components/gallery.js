@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 
 import Login from './login.js';
-// import Photo from './gallery-components.js';
-// import ImportScript from './cloud.js';
+
 
 function Gallery() {
 
     const [loading, setLoading] = useState(false)
     const [image, setImage] = useState("")
-    // require('dotenv').config()
-
-    // console.log(process.env);
+    
 
     const uploadImage = async event => {
         const files = event.target.files
@@ -19,7 +16,7 @@ function Gallery() {
         data.append('upload_preset', 'photography')
         setLoading(true)
 
-        const response = await fetch(API_KEY,
+        const response = await fetch("https://api.cloudinary.com/v1_1/sparklemoon/image/upload",
         {
             method:"POST",
             body:data,
@@ -50,7 +47,7 @@ function Gallery() {
 
             ) 
         }
-        {/* <Cloud/> */}
+        
         <Login/>
         </div>
     )

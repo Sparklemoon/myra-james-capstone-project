@@ -12,7 +12,7 @@ export default class Contact extends Component {
     render() {
         return (
             <div className='contact-wrapper'>
-               <h3> bahhumbug</h3>
+               <h3>MERRY CHRISTMAS</h3>
                            
                 </div>
            
