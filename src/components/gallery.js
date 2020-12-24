@@ -1,3 +1,17 @@
+
+{/* <CloudinaryContext>
+    <Image>
+        <Transformation />
+        <Transformation />
+    </Image>
+    <Image>
+        <Transformation />
+    </Image>
+</CloudinaryContext> */}
+
+
+
+
 // import React, { useState } from 'react';
 
 // import Login from './login.js';

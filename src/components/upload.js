@@ -6,7 +6,7 @@ class Upload extends Component {
 uploadWidget() {
     cloudinary.openUploadWidget({ cloud_name: 'sparklemoon', upload_preset: 'preset', tags:['wildlife']},
         function(error, result) {
-            console.log(result);
+            _this.setState({gallery: _this.state.gallery.concat(result)})
         });
 }
 render(){
