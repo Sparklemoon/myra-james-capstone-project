@@ -4,16 +4,16 @@ import { render } from 'react-dom';
 class Upload extends Component {
 
 uploadWidget() {
-    cloudinary.openUploadWidget({ cloud_name: 'sparklemoon', upload_preset: 'preset', tags:['wildlife']},
+    cloudinary.openUploadWidget({ cloud_name: 'sparklemoon', upload_preset: 'photography', tags:['wildlife']},
         function(error, result) {
-            _this.setState({gallery: _this.state.gallery.concat(result)})
+            console.log(result);
         });
 }
 render(){
     return (
-        <div className="main">
+        <div className="upload-wrapper">
             <h1>Gallery</h1>
-            <div className="upload">
+            <div className="upload-widget-wrapper">
                 <button onClick={this.uploadWidget.bind(this)} className="upload-button">
                     Add Image
                 </button>

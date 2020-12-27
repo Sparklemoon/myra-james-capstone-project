@@ -25,7 +25,7 @@ export default class Login extends Component {
         event.preventDefault()
 
         
-        fetch("http://127.0.0.1:5000/user/authentication", {
+        fetch(API_KEY, {
             method:"POST",
             headers: { "content-type": "application/json"},
             body: JSON.stringify({
